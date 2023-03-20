@@ -17,9 +17,9 @@ if (FILTER_FILE.endsWith('.csv')) {
         }
     ).map((row: any) => row.Loc || row.url || row.href);
 } else {
-    urls = readFileSync(resolve(__dirname, '../' + FILTER_FILE), 'utf-8').split(
-        /[\r\n\s]+/
-    );
+    urls = readFileSync(resolve(__dirname, '../' + FILTER_FILE), 'utf-8')
+        .split(/[\r\n\s]+/)
+        .map((url: string) => url.trim());
 }
 
 const data = parse(
