@@ -1,7 +1,7 @@
 dist/
 node_modules/
 .DS_Store
-data-*.csv
+*.csv
 token.json
 .env
 credentials.json

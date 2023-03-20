@@ -63,7 +63,7 @@ googleAuth.getAuth().then(async (auth) => {
         );
         const controller = new AbortController();
         const { signal } = controller;
-        const timeout = setTimeout(controller.abort, 30000);
+        const timeout = setTimeout(controller.abort, 60000);
         const response = await fetch(
             `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(
                 siteUrl
