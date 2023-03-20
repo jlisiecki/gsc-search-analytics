@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "nodemon src/index.ts",
         "start": "ts-node src/index.ts",
+        "filter": "ts-node src/filter.ts",
         "logout": "ts-node src/index.ts --logout"
     },
     "keywords": [],

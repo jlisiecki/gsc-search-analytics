@@ -30,3 +30,11 @@
 
 1. Chcąc się wylogować z danego konta (np. w celu użycia usługi z innego konta Google) wpisujemy komendę
    `npm run logout`
+
+## Filtracja
+
+1. W głównym katalogu utworzyć plik tekstowy zawierający listę adresów URL (każdy w osobnej lini).
+2. Dodać do pliku `.env` nazwę utworzonego w pierwszym kroku pliku w polu `FILTER_FILE`.
+3. Dodać do pliku `.env` nazwę pliku z danymi do filtracji np. `data-(...).csv`.
+4. Uruchomić komendę
+   `npm run start`

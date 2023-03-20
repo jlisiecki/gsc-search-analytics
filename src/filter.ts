@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { parse } from 'csv-parse/sync';
 import { stringify } from 'csv-stringify/sync';
 import { readFileSync, writeFileSync } from 'fs';
@@ -19,7 +20,8 @@ if (FILTER_FILE.endsWith('.csv')) {
 } else {
     urls = readFileSync(resolve(__dirname, '../' + FILTER_FILE), 'utf-8')
         .split(/[\r\n\s]+/)
-        .map((url: string) => url.trim());
+        .map((url: string) => url.trim())
+        .filter(Boolean);
 }
 
 const data = parse(
