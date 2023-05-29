@@ -37,4 +37,4 @@
 2. Dodać do pliku `.env` nazwę utworzonego w pierwszym kroku pliku w polu `FILTER_FILE`.
 3. Dodać do pliku `.env` nazwę pliku z danymi do filtracji np. `data-(...).csv`.
 4. Uruchomić komendę
-   `npm run start`
+   `npm run filter`
